@@ -1,3 +1,6 @@
 [submodule "lib/RealWorldModelling"]
 	path = lib/RealWorldModelling
 	url = https://github.com/C00206286/RealWorldModelling.git
+[submodule "lib/modulo_3"]
+	path = lib/modulo_3
+	url = https://github.com/EricOT98/P0-C00203756

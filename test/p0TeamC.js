@@ -15,6 +15,10 @@ describe('p0TeamC()', function () {
   it('does something else', function () {
     expect(true).to.equal(false);
   });
-
+  
+  it('Integrates modulo 3', function () {
+    expect(Modulo_3).to.be.a('function');
+    expect(Modulo_3(7)).to.equal(1);
+  });
   // Add more assertions here
 });
