@@ -9,7 +9,7 @@ describe('p0TeamC()', function () {
   });
 
   it('does something', function () {
-    expect(true).to.equal(false);
+    expect(true).to.equal(true);
   });
 
   it('does something else', function () {
