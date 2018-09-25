@@ -8,10 +8,12 @@ describe('p0TeamC()', function () {
 
   });
 
-  it('does something', function () {
-    expect(true).to.equal(true);
+  it('2 Cubed', function () {
+    expect(Cube(2)).to.equal(8);
   });
-
+  it('4 Cubed', function () {
+    expect(Cube(4)).to.equal(64);
+  });
   it('does something else', function () {
     expect(true).to.equal(false);
   });
