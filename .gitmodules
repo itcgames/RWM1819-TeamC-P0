@@ -7,3 +7,6 @@
 [submodule "lib/p0-C00203711"]
 	path = lib/p0-C00203711
 	url = https://github.com/Pierce-James/p0-C00203711.git
+[submodule "lib/RWM-P0"]
+	path = lib/RWM-P0
+	url = https://github.com/zjacques/RWM-P0.git
