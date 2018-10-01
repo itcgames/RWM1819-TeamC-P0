@@ -10,3 +10,6 @@
 [submodule "lib/RWM-P0"]
 	path = lib/RWM-P0
 	url = https://github.com/zjacques/RWM-P0.git
+[submodule "lib/modulo_first"]
+	path = lib/modulo_first
+	url = https://github.com/John-OMeara/p0-C00206417.git

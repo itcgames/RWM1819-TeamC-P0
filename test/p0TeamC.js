@@ -27,6 +27,13 @@ describe('p0TeamC()', function () {
     expect(decrement_if_less_than_first([10, 0, 5, 11])).to.deep.equal([10, -1, 4, 11]);
   })
 
+  it('Integrates modulo_first()', function() {
+    expect(modulo_first).to.be.a('function');
+    expect(modulo_first([5])).to.deep.equal([5%5]);
+    expect(modulo_first([2,3,4,5])).to.deep.equal([0,1,0,1]);
+    expect(modulo_first([4,2,8,3,9,4,10,5,11,6])).to.deep.equal([0,2,0,3,1,0,2,1,3,2]);
+  })
+
   it('exists', function () {
     expect(p0TeamC).to.be.a('function');
     expect(p0TeamC('test string')).to.equal(undefined);
