@@ -3,24 +3,30 @@
 describe('p0TeamC()', function () {
   'use strict';
 
-  it('exists', function () {
-    expect(p0TeamC).to.be.a('function');
-
-  });
-
-  it('2 Cubed', function () {
-    expect(Cube(2)).to.equal(8);
-  });
-  it('4 Cubed', function () {
+  it('Integrates Cube()', function() {
+    expect(Cube).to.be.a('function');
     expect(Cube(4)).to.equal(64);
-  });
-  it('does something else', function () {
-    expect(true).to.equal(false);
+    expect(Cube(-2)).to.equal(-8);
+    expect(Cube(0)).to.equal(0);
   });
   
-  it('Integrates modulo 3', function () {
+  it('Integrates Modulo_3()', function () {
     expect(Modulo_3).to.be.a('function');
     expect(Modulo_3(7)).to.equal(1);
+  });
+
+  it('Integrates running_total()', function () {
+    expect(running_total).to.be.a('function');
+    expect(running_total(1)).to.equal(1);
+    expect(running_total(2)).to.equal(3);
+    expect(running_total(-1)).to.equal(2);
+  });
+
+  it('exists', function () {
+    expect(p0TeamC).to.be.a('function');
+    expect(p0TeamC('test string')).to.equal(undefined);
+    expect(p0TeamC(12)).to.equal(undefined);
+    expect(JSON.stringify(p0TeamC([1, 2, 3]))).to.equal(JSON.stringify([3, 5, 5]));
   });
   // Add more assertions here
 });
