@@ -22,6 +22,11 @@ describe('p0TeamC()', function () {
     expect(running_total(-1)).to.equal(2);
   });
 
+  it('Integrates decrement_if_less_than_first()', function() {
+    expect(decrement_if_less_than_first).to.be.a('function');
+    expect(decrement_if_less_than_first([10, 0, 5, 11])).to.deep.equal([10, -1, 4, 11]);
+  })
+
   it('exists', function () {
     expect(p0TeamC).to.be.a('function');
     expect(p0TeamC('test string')).to.equal(undefined);

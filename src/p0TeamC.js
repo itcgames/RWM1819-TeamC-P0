@@ -8,5 +8,7 @@ var p0TeamC = function (sequence) {
   for(var i = 0; i < sequence.length; ++i) {
     sequence[i] = running_total(Modulo_3(Cube(sequence[i])));
   }
+  sequence = decrement_if_less_than_first(sequence);
+
   return sequence;
 }
