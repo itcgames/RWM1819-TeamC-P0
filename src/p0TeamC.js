@@ -15,6 +15,8 @@ var p0TeamC = function (sequence) {
   for(var i = 0; i < sequence.length; ++i) {
     sequence[i] = fact(sequence[i]);
   }
+  
+  sequence = modulo_first(sequence);
 
   return sequence;
 }
