@@ -10,5 +10,7 @@ var p0TeamC = function (sequence) {
   }
   sequence = decrement_if_less_than_first(sequence);
 
+  sequence = modulo_first(sequence);
+
   return sequence;
 }
