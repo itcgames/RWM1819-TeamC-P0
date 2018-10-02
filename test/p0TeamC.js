@@ -34,11 +34,16 @@ describe('p0TeamC()', function () {
     expect(modulo_first([4,2,8,3,9,4,10,5,11,6])).to.deep.equal([0,2,0,3,1,0,2,1,3,2]);
   })
 
+  it('Integrates diff()', function() {
+    expect(diff).to.be.a('function');
+    expect(diff([10, 0, 5, 11])).to.deep.equal([10, 10, 5, 6]);
+  })
+
   it('exists', function () {
     expect(p0TeamC).to.be.a('function');
     expect(p0TeamC('test string')).to.equal(undefined);
     expect(p0TeamC(12)).to.equal(undefined);
-    expect(JSON.stringify(p0TeamC([1, 2, 3]))).to.equal(JSON.stringify([3, 5, 5]));
+    expect(JSON.stringify(p0TeamC([1, 2, 3]))).to.equal(JSON.stringify([3, 2, 0]));
   });
   // Add more assertions here
 });
