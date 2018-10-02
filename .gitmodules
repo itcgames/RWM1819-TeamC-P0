@@ -13,3 +13,6 @@
 [submodule "lib/modulo_first"]
 	path = lib/modulo_first
 	url = https://github.com/John-OMeara/p0-C00206417.git
+[submodule "lib/P0-C00202334"]
+	path = lib/P0-C00202334
+	url = https://github.com/zjacques/P0-C00202334.git
