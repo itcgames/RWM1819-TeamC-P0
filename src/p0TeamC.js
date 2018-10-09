@@ -15,15 +15,11 @@ var p0TeamC = function (sequence) {
   for(var i = 0; i < sequence.length; ++i) {
     sequence[i] = fact(sequence[i]);
   }
-  
+
   sequence = modulo_first(sequence);
 
-  for(var i = 0; i < sequence.length; ++i) {
-    sequence[i] = xor_21(sequence[i]);
-  }
-
   for(var i = 0; i < sequence.length; ++i){
-    sequence[i] = fizzbuzz(sequence[i]);
+    sequence[i] = fizzbuzz(collatz(xor_21(sequence[i])));
   }
 
   return sequence;

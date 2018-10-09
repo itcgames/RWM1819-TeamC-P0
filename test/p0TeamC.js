@@ -56,6 +56,7 @@ describe('p0TeamC()', function () {
     expect(collatz(3)).to.equal(10);
     expect(collatz(4)).to.equal(2);
     expect(collatz(5)).to.equal(16);
+  })
 
   it ('Integrates fizzbuzz()', function() {
     expect(fizzbuzz).to.be.a('function');
@@ -71,7 +72,7 @@ describe('p0TeamC()', function () {
     expect(p0TeamC).to.be.a('function');
     expect(p0TeamC('test string')).to.equal(undefined);
     expect(p0TeamC(12)).to.equal(undefined);
-    expect(JSON.stringify(p0TeamC([1, 2, 3]))).to.equal(JSON.stringify([3, 23, 5]));
+    expect(JSON.stringify(p0TeamC([1, 2, 3]))).to.equal(JSON.stringify([64,5,5]));
   });
   // Add more assertions here
 });
