@@ -18,5 +18,9 @@ var p0TeamC = function (sequence) {
   
   sequence = modulo_first(sequence);
 
+  for(var i = 0; i < sequence.length; ++i) {
+    sequence[i] = xor_21(sequence[i]);
+  }
+
   return sequence;
 }
