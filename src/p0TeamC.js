@@ -22,5 +22,9 @@ var p0TeamC = function (sequence) {
     sequence[i] = xor_21(sequence[i]);
   }
 
+  for(var i = 0; i < sequence.length; ++i){
+    sequence[i] = fizzbuzz(sequence[i]);
+  }
+
   return sequence;
 }

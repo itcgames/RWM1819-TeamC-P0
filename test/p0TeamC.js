@@ -51,11 +51,21 @@ describe('p0TeamC()', function () {
     expect(xor_21(3)).to.equal(22);
   })
 
+  it ('Integrates fizzbuzz()', function() {
+    expect(fizzbuzz).to.be.a('function');
+    expect(fizzbuzz(-15)).to.equal(-15);
+    expect(fizzbuzz(-1)).to.equal(-1);
+    expect(fizzbuzz(1)).to.equal(1);
+    expect(fizzbuzz(3)).to.equal(3);
+    expect(fizzbuzz(5)).to.equal(5);
+    expect(fizzbuzz(15)).to.equal(0);
+  })
+
   it('exists', function () {
     expect(p0TeamC).to.be.a('function');
     expect(p0TeamC('test string')).to.equal(undefined);
     expect(p0TeamC(12)).to.equal(undefined);
-    expect(JSON.stringify(p0TeamC([1, 2, 3]))).to.equal(JSON.stringify([21, 23, 20]));
+    expect(JSON.stringify(p0TeamC([1, 2, 3]))).to.equal(JSON.stringify([3, 23, 5]));
   });
   // Add more assertions here
 });
