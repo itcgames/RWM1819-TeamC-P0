@@ -42,7 +42,7 @@ describe('p0TeamC()', function () {
 
   it('Integrates fact()', function() {
     expect(fact).to.be.a('function');
-    expect(fact(8)).to.equal(40320);
+    expect(fact(0)).to.equal(1);
   })
 
   it ('Integrates xor_21()', function() {
@@ -73,7 +73,7 @@ describe('p0TeamC()', function () {
     expect(p0TeamC).to.be.a('function');
     expect(p0TeamC('test string')).to.equal(undefined);
     expect(p0TeamC(12)).to.equal(undefined);
-    expect(JSON.stringify(p0TeamC([1, 2, 3]))).to.equal(JSON.stringify([5, 5, 5]));
+    expect(JSON.stringify(p0TeamC([1, 1, 2]))).to.equal(JSON.stringify([5, 5, 5]));
     total = 0;
   });
   // Add more assertions here

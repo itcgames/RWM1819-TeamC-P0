@@ -13,11 +13,11 @@ var p0TeamC = function (sequence) {
   }
 
   sequence = modulo_first(sequence);
+  console.log(sequence);
 
   for(var i = 0; i < sequence.length; ++i) {
     sequence[i] = running_total(sequence[i]);
   }
-
   sequence = decrement_if_less_than_first(sequence);
 
   sequence = diff(sequence);
