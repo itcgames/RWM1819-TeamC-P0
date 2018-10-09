@@ -6,11 +6,18 @@ var p0TeamC = function (sequence) {
     return undefined;
   }
 
-    total = 0;
+  total = 0;
 
   for(var i = 0; i < sequence.length; ++i) {
-    sequence[i] = running_total(Modulo_3(Cube(sequence[i])));
+    sequence[i] = Modulo_3(Cube(sequence[i]));
   }
+
+  sequence = modulo_first(sequence);
+
+  for(var i = 0; i < sequence.length; ++i) {
+    sequence[i] = running_total(sequence[i]);
+  }
+
   sequence = decrement_if_less_than_first(sequence);
 
   sequence = diff(sequence);
@@ -18,8 +25,6 @@ var p0TeamC = function (sequence) {
   for(var i = 0; i < sequence.length; ++i) {
     sequence[i] = fact(sequence[i]);
   }
-
-  sequence = modulo_first(sequence);
 
   for(var i = 0; i < sequence.length; ++i){
     sequence[i] = fizzbuzz(collatz(xor_21(sequence[i])));
