@@ -20,6 +20,7 @@ describe('p0TeamC()', function () {
     expect(running_total(1)).to.equal(1);
     expect(running_total(2)).to.equal(3);
     expect(running_total(-1)).to.equal(2);
+    total = 0;
   });
 
   it('Integrates decrement_if_less_than_first()', function() {
@@ -72,7 +73,8 @@ describe('p0TeamC()', function () {
     expect(p0TeamC).to.be.a('function');
     expect(p0TeamC('test string')).to.equal(undefined);
     expect(p0TeamC(12)).to.equal(undefined);
-    expect(JSON.stringify(p0TeamC([1, 2, 3]))).to.equal(JSON.stringify([64,5,5]));
+    expect(JSON.stringify(p0TeamC([1, 2, 3]))).to.equal(JSON.stringify([64,64,64]));
+    total = 0;
   });
   // Add more assertions here
 });
