@@ -22,3 +22,9 @@
 [submodule "lib/xor_21"]
 	path = lib/xor_21
 	url = https://github.com/rafael-plugge/p0-c00203250
+[submodule "lib/RWM1819-TeamC-P0"]
+	path = lib/RWM1819-TeamC-P0
+	url = https://github.com/itcgames/RWM1819-TeamC-P0.git
+[submodule "lib/P0-c00205948"]
+	path = lib/P0-c00205948
+	url = https://github.com/MichaelBridgette/P0-c00205948.git
