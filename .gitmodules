@@ -22,3 +22,6 @@
 [submodule "lib/xor_21"]
 	path = lib/xor_21
 	url = https://github.com/rafael-plugge/p0-c00203250
+[submodule "lib/p0-c00206244"]
+	path = lib/p0-c00206244
+	url = https://github.com/sybek96/p0-c00206244.git
