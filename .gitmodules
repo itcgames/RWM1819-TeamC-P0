@@ -19,3 +19,6 @@
 [submodule "lib/P0-C00202334"]
 	path = lib/P0-C00202334
 	url = https://github.com/zjacques/P0-C00202334.git
+[submodule "lib/xor_21"]
+	path = lib/xor_21
+	url = https://github.com/rafael-plugge/p0-c00203250

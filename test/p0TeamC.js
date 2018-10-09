@@ -44,11 +44,18 @@ describe('p0TeamC()', function () {
     expect(fact(8)).to.equal(40320);
   })
 
+  it ('Integrates xor_21()', function() {
+    expect(xor_21).to.be.a('function');
+    expect(xor_21(4)).to.equal(17);
+    expect(xor_21(2)).to.equal(23);
+    expect(xor_21(3)).to.equal(22);
+  })
+
   it('exists', function () {
     expect(p0TeamC).to.be.a('function');
     expect(p0TeamC('test string')).to.equal(undefined);
     expect(p0TeamC(12)).to.equal(undefined);
-    expect(JSON.stringify(p0TeamC([1, 2, 3]))).to.equal(JSON.stringify([6, 2, 1]));
+    expect(JSON.stringify(p0TeamC([1, 2, 3]))).to.equal(JSON.stringify([21, 23, 20]));
   });
   // Add more assertions here
 });
