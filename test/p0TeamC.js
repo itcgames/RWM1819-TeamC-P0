@@ -9,7 +9,7 @@ describe('p0TeamC()', function () {
     expect(Cube(-2)).to.equal(-8);
     expect(Cube(0)).to.equal(0);
   });
-  
+
   it('Integrates Modulo_3()', function () {
     expect(Modulo_3).to.be.a('function');
     expect(Modulo_3(7)).to.equal(1);
@@ -50,6 +50,12 @@ describe('p0TeamC()', function () {
     expect(xor_21(2)).to.equal(23);
     expect(xor_21(3)).to.equal(22);
   })
+
+  it ('Integrates collatz()', function(){
+    expect(collatz).to.be.a('function');
+    expect(collatz(3)).to.equal(10);
+    expect(collatz(4)).to.equal(2);
+    expect(collatz(5)).to.equal(16);
 
   it ('Integrates fizzbuzz()', function() {
     expect(fizzbuzz).to.be.a('function');
